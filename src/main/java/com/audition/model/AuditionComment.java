@@ -1,16 +1,20 @@
 package com.audition.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Data
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuditionPost {
-    private Integer userId;
+public class AuditionComment {
+    private Integer postId;
     private Integer id;
-    private String title;
+    private String name;
+    private String email;
     private String body;
 
 }
